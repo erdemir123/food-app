@@ -1,0 +1,158 @@
+.App {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+
+}
+.header-container{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.black {
+  font-size: 2rem;
+  position: absolute;
+  top: -0.5rem;
+  left: 90%;
+}
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.menu span {
+  position: absolute;
+  width: 7rem;
+  height: .2rem;
+  background-color: orange;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%) rotateX(90deg);
+  transition: .6s;
+  cursor: pointer;
+}
+.menu:hover span{
+  transform:translate(-50%) rotateX(0deg);
+}
+
+.menuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.menuList li {
+  font-size: 1.2rem;
+  list-style: none;
+  color: orange;
+  padding:0.2rem .8rem;
+  transition: .6s;
+  
+}
+.menuList li:hover{
+  background-color: orange;
+  color: white;
+}
+.meal-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  
+}
+.main{
+  width: 40%;
+  margin-top: 1.3rem;
+  display: flex;
+  min-width: 400px;
+  margin-right: 1rem;
+  position: relative;
+}
+.image{
+  width: 40%;
+  margin-right: 1.5rem;
+  border: 2px solid orange;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img{
+  width: 100%;
+  height: 200px;
+  transition: .6s;
+}
+.image img:hover{
+  transform: scale(1.05);
+}
+.title-container{
+  width: 60%;
+}
+.title-header{
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed black;
+  height: 1.5rem;
+  padding-bottom: .2rem;
+  font-size: .9rem;
+
+}
+.title{
+  font-weight: bolder;
+}
+.price{
+  color: orangered;
+}
+
+@media (max-width:768px) {
+  .main{
+    width: 90%;
+  }
+  .title{
+    font-size: .7rem;
+  }
+  .header-title{
+font-size: 2rem;
+  }
+  .menu{
+    width: 90%;
+
+  }
+  .menuList{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    gap: .5rem;
+  }
+  .menuList li{
+    font-size: 1rem;
+    
+  }
+}
